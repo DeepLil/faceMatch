@@ -1,0 +1,96 @@
+[2024-09-09 12:08:33,987: INFO: 01_generate_pkl_img]: >>>>>>> stage1 started
+[2024-09-09 12:08:33,991: ERROR: 01_generate_pkl_img]: 'pickle_format_data'
+Traceback (most recent call last):
+  File ".\src\01_generate_pkl_img.py", line 35, in <module>
+    generate_data_pickle_file(config_path= parsed_args.config, params_path= parsed_args.params)
+  File ".\src\01_generate_pkl_img.py", line 21, in generate_data_pickle_file
+    pickle_format_data_dir = artifacts['pickle_format_data']
+KeyError: 'pickle_format_data'
+[2024-09-09 12:09:31,656: INFO: 01_generate_pkl_img]: >>>>>>> stage1 started
+[2024-09-09 12:09:31,658: INFO: all_utils]: Directory is created at artifacts\pickle_format_data
+[2024-09-09 12:09:31,658: INFO: 01_generate_pkl_img]: stage1 completed >>>>>>>>>
+[2024-09-09 12:19:45,900: INFO: 01_generate_pkl_img]: >>>>>>> stage1 started
+[2024-09-09 12:19:45,916: INFO: all_utils]: Directory is created at artifacts\pickle_format_data
+[2024-09-09 12:19:45,921: INFO: 01_generate_pkl_img]: stage1 completed >>>>>>>>>
+[2024-09-09 12:23:20,671: INFO: 01_generate_pkl_img]: >>>>>>> stage1 started
+[2024-09-09 12:23:20,676: INFO: all_utils]: Directory is created at artifacts\pickle_format_data
+[2024-09-09 12:23:22,532: INFO: 01_generate_pkl_img]: stage1 completed >>>>>>>>>
+[2024-09-09 12:24:43,194: INFO: 01_generate_pkl_img]: >>>>>>> stage1 started
+[2024-09-09 12:24:43,198: INFO: all_utils]: Directory is created at artifacts\pickle_format_data
+[2024-09-09 12:24:55,908: INFO: 01_generate_pkl_img]: stage1 completed >>>>>>>>>
+[2024-09-09 12:30:49,540: INFO: 01_generate_pkl_img]: >>>>>>> stage1 started
+[2024-09-09 12:30:49,543: INFO: all_utils]: Directory is created at artifacts\pickle_format_data
+[2024-09-09 12:30:49,641: INFO: 01_generate_pkl_img]: Total actors are: 100
+[2024-09-09 12:30:49,641: INFO: 01_generate_pkl_img]: Total images: 8664
+[2024-09-09 12:30:49,642: INFO: 01_generate_pkl_img]: stage1 completed >>>>>>>>>
+[2024-09-09 12:33:38,452: INFO: 01_generate_pkl_img]: >>>>>>> stage1 started
+[2024-09-09 12:33:38,456: INFO: all_utils]: Directory is created at artifacts\pickle_format_data
+[2024-09-09 12:33:38,539: INFO: 01_generate_pkl_img]: Total actors are: 100
+[2024-09-09 12:33:38,539: INFO: 01_generate_pkl_img]: Total images: 8664
+[2024-09-09 12:33:38,544: INFO: 01_generate_pkl_img]: stage1 completed >>>>>>>>>
+[2024-09-09 15:10:01,838: INFO: 02_feature_extractor]: >>>>>>> stage2 started
+[2024-09-09 15:10:01,870: ERROR: 02_feature_extractor]: load() takes at most 1 positional arguments (2 given)
+Traceback (most recent call last):
+  File ".\src\02_feature_extractor.py", line 53, in <module>
+    feature_extractor(config_path= parsed_args.config, params_path= parsed_args.params)
+  File ".\src\02_feature_extractor.py", line 30, in feature_extractor
+    filenames = pickle.load(open(img_pickle_file_name), 'rb')
+TypeError: load() takes at most 1 positional arguments (2 given)
+[2024-09-09 15:10:39,271: INFO: 02_feature_extractor]: >>>>>>> stage2 started
+[2024-09-09 15:10:39,279: ERROR: 02_feature_extractor]: VGGFace() got an unexpected keyword argument 'include_tops'
+Traceback (most recent call last):
+  File ".\src\02_feature_extractor.py", line 53, in <module>
+    feature_extractor(config_path= parsed_args.config, params_path= parsed_args.params)
+  File ".\src\02_feature_extractor.py", line 36, in feature_extractor
+    model = VGGFace(model = model_name, include_tops = include_tops, pooling = pooling, input_shape=(224,224,3))
+TypeError: VGGFace() got an unexpected keyword argument 'include_tops'
+[2024-09-09 15:11:14,452: INFO: 02_feature_extractor]: >>>>>>> stage2 started
+[2024-09-09 15:11:14,460: INFO: all_utils]: Directory is created at a
+[2024-09-09 15:11:14,461: INFO: all_utils]: Directory is created at r
+[2024-09-09 15:11:14,462: INFO: all_utils]: Directory is created at t
+[2024-09-09 15:11:14,462: INFO: all_utils]: Directory is created at i
+[2024-09-09 15:11:14,464: INFO: all_utils]: Directory is created at f
+[2024-09-09 15:11:14,464: INFO: all_utils]: Directory is created at a
+[2024-09-09 15:11:14,464: INFO: all_utils]: Directory is created at c
+[2024-09-09 15:11:14,465: INFO: all_utils]: Directory is created at t
+[2024-09-09 15:11:14,467: INFO: all_utils]: Directory is created at s
+[2024-09-09 15:11:14,467: INFO: all_utils]: Directory is created at \
+[2024-09-09 15:11:14,467: INFO: all_utils]: Directory is created at e
+[2024-09-09 15:11:14,467: INFO: all_utils]: Directory is created at x
+[2024-09-09 15:11:14,468: INFO: all_utils]: Directory is created at t
+[2024-09-09 15:11:14,468: INFO: all_utils]: Directory is created at r
+[2024-09-09 15:11:14,468: INFO: all_utils]: Directory is created at a
+[2024-09-09 15:11:14,468: INFO: all_utils]: Directory is created at c
+[2024-09-09 15:11:14,468: INFO: all_utils]: Directory is created at t
+[2024-09-09 15:11:14,469: INFO: all_utils]: Directory is created at e
+[2024-09-09 15:11:14,469: INFO: all_utils]: Directory is created at d
+[2024-09-09 15:11:14,470: INFO: all_utils]: Directory is created at _
+[2024-09-09 15:11:14,470: INFO: all_utils]: Directory is created at f
+[2024-09-09 15:11:14,470: INFO: all_utils]: Directory is created at e
+[2024-09-09 15:11:14,470: INFO: all_utils]: Directory is created at a
+[2024-09-09 15:11:14,471: INFO: all_utils]: Directory is created at t
+[2024-09-09 15:11:14,471: INFO: all_utils]: Directory is created at u
+[2024-09-09 15:11:14,471: INFO: all_utils]: Directory is created at r
+[2024-09-09 15:11:14,471: INFO: all_utils]: Directory is created at e
+[2024-09-09 15:11:14,472: INFO: all_utils]: Directory is created at s
+[2024-09-09 15:11:14,472: INFO: 02_feature_extractor]: stage2 completed >>>>>>>>>
+[2024-09-09 15:14:12,646: INFO: 02_feature_extractor]: >>>>>>> stage2 started
+[2024-09-09 15:14:12,654: INFO: all_utils]: Directory is created at artifacts\extracted_features
+[2024-09-09 15:14:12,655: INFO: 02_feature_extractor]: stage2 completed >>>>>>>>>
+[2024-09-09 15:30:08,066: INFO: 02_feature_extractor]: >>>>>>> stage2 started
+[2024-09-09 15:30:08,074: INFO: all_utils]: Directory is created at artifacts\extracted_features
+[2024-09-09 15:30:08,075: INFO: 02_feature_extractor]: stage2 completed >>>>>>>>>
+[2024-09-09 17:05:57,956: INFO: 02_feature_extractor]: >>>>>>> stage2 started
+[2024-09-09 17:05:57,961: INFO: all_utils]: Directory is created at artifacts\extracted_features
+[2024-09-09 17:05:58,034: ERROR: 02_feature_extractor]: 'NoneType' object has no attribute 'predict'
+Traceback (most recent call last):
+  File ".\src\02_feature_extractor.py", line 74, in <module>
+    feature_extractor(config_path= parsed_args.config, params_path= parsed_args.params)
+  File ".\src\02_feature_extractor.py", line 61, in feature_extractor
+    features.append(extractor(file, model))
+  File ".\src\02_feature_extractor.py", line 26, in extractor
+    result = model.predict(preprocess_img).flatten()
+AttributeError: 'NoneType' object has no attribute 'predict'
+[2024-09-09 17:06:28,022: INFO: 02_feature_extractor]: >>>>>>> stage2 started
+[2024-09-09 17:06:36,148: INFO: all_utils]: Directory is created at artifacts\extracted_features
+[2024-09-09 17:26:58,658: INFO: 02_feature_extractor]: stage2 completed >>>>>>>>>
